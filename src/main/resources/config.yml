@@ -1,1 +1,31 @@
-auto-update: true
+# DO NOT change this
+version: 1
+
+# global config
+options:
+  # Enable auto update (default: true)
+  auto-update: true
+  # Language of this addon (default: en-US)
+  lang: en-US
+
+# Sync research progress for everyone on server
+global-research:
+  enable: false
+
+# Storage config
+storage:
+  # Storage type
+  # Options:
+  # - sqlite
+  # - mysql
+  type: sqlite
+
+  # MySQL settings
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    user: root
+    password: 114514
+    databse: noresearch
+    # The prefix of tables created by NoResearch
+    table-prefix: nor_
